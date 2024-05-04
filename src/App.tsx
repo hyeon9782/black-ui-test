@@ -2,6 +2,9 @@ import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@black-ui/react";
 import FormArea from "./components/FormArea";
 import OverlayArea from "./components/OverlayArea";
 import FeedbackArea from "./components/FeedbackArea";
+import DataDisplayArea from "./components/DataDisplayArea";
+import DisclosureArea from "./components/DisclosureArea";
+import "@black-ui/react/dist/style.css";
 
 function App() {
   return (
@@ -11,7 +14,7 @@ function App() {
           <Tab>Form</Tab>
           <Tab>Overlay</Tab>
           <Tab>Feedback</Tab>
-          <Tab>Data Display</Tab>
+          <Tab>DataDisplay</Tab>
           <Tab>Disclosure</Tab>
         </TabList>
         <TabPanels>
@@ -24,8 +27,12 @@ function App() {
           <TabPanel>
             <FeedbackArea />
           </TabPanel>
-          <TabPanel></TabPanel>
-          <TabPanel></TabPanel>
+          <TabPanel>
+            <DataDisplayArea />
+          </TabPanel>
+          <TabPanel>
+            <DisclosureArea />
+          </TabPanel>
         </TabPanels>
       </Tabs>
     </div>
