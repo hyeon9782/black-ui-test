@@ -1,5 +1,6 @@
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@black-ui/react";
 import FormArea from "./components/FormArea";
+import OverlayArea from "./components/OverlayArea";
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
           <TabPanel>
             <FormArea />
           </TabPanel>
-          <TabPanel></TabPanel>
+          <TabPanel>
+            <OverlayArea />
+          </TabPanel>
           <TabPanel></TabPanel>
           <TabPanel></TabPanel>
         </TabPanels>
